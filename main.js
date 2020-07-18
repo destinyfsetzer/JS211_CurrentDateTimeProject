@@ -71,21 +71,11 @@ const convertStringToNum = (numA) => {
   // console.log(isDataType(4))
 // replace "4" with different data type to change
 
-<<<<<<< HEAD
-const showDataType = (data) => {
-  return typeof data
-}
-
-console.log(showDataType(true))
-console.log(showDataType(7))
-console.log(showDataType("button stuff"))
-=======
 const showDataType = (inputStuff) => {
   inputStuff = document.getElementById("input-stuff").value
   document.getElementById("type-of-input").innerHTML = typeof inputStuff;
 }
 
->>>>>>> class-test-version
   
 // Write a JavaScript program that adds 2 numbers together.
 const numAdd = (a, b) => {
