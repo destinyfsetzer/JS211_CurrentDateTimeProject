@@ -32,6 +32,29 @@ const convertStringToNum = (string) => {
 }
 console.log(convertStringToNum("5"))
 console.log(convertStringToNum("hello"))
+
+// Write a JavaScript program to convert a number to a string.
+const convertNumToString = (numInput) => {
+ numInput = document.getElementById("numInput").value
+ document.getElementById("results2").innerHTML = `${numInput} is a ${typeof(numInput)}`;
+}
+
+
+// Write a JavaScript program to convert a string to the number.
+let stringInput = ""
+
+// const storeString = (string) => {
+//   let stringInput = string
+//   convertNumToString(numInput)
+// }
+
+const convertStringToNum = (numA) => {
+  numA = document.getElementById("stringInput").value
+  x = parseInt(numA)
+  document.getElementById("results").innerHTML = `${x} is a ${typeof(x)}`;
+  console.log(typeof(x))
+}
+
  
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -48,6 +71,7 @@ console.log(convertStringToNum("hello"))
   // console.log(isDataType(4))
 // replace "4" with different data type to change
 
+<<<<<<< HEAD
 const showDataType = (data) => {
   return typeof data
 }
@@ -55,12 +79,22 @@ const showDataType = (data) => {
 console.log(showDataType(true))
 console.log(showDataType(7))
 console.log(showDataType("button stuff"))
+=======
+const showDataType = (inputStuff) => {
+  inputStuff = document.getElementById("input-stuff").value
+  document.getElementById("type-of-input").innerHTML = typeof inputStuff;
+}
+
+>>>>>>> class-test-version
   
 // Write a JavaScript program that adds 2 numbers together.
 const numAdd = (a, b) => {
-  let sum = a + b ;
-  return sum
+  a = document.getElementById("value1").value
+  b = document.getElementById("value2").value
+  let sum = parseInt(a) + parseInt(b) ;
+  document.getElementById("add-numbers").innerHTML = sum ;
   }
+
   console.log(numAdd(2, 3))
   
 // document.getElementById("button-two").innerHTML = sum;
